@@ -188,6 +188,8 @@ Track: *AI & Creator Economy*
 	⁠"We're not building AI that writes instead of creators. We're building AI that writes like creators."
 
 StackSlate AI empowers creators to scale their content without sacrificing the authenticity that made their audience connect with them in the first place.
+
+
 OUR TEAM
 https://github.com/Vanshika-110 (me: Vanshika Verma)
 https://github.com/oneshiikka (Vanshika Reddu)
