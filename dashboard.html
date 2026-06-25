@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | STACKSLATE AI</title>
+    <link rel="stylesheet" href="vars.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-overlay"></div>
+
+    
+    
+
+    <div class="container dash-container">
+
+        <div class="tabs">
+            <button type="button" class="tab-btn active" data-tab="analyzer">Style Analyzer</button>
+            <button type="button" class="tab-btn" data-tab="generator">Content Generator</button>
+        </div>
+
+        <main class="tab-content">
+            <!-- Style Analyzer Section -->
+            <section id="analyzer" class="tab-panel active">
+                <h2>Analyze Writing Style</h2>
+                <p class="panel-desc">Paste your text below to analyze its tone, vocabulary, writing style, and authenticity score.</p>
+                <div class="input-group">
+                    <textarea id="content" placeholder="Paste your article, email, or blog post here..."></textarea>
+                </div>
+                <button onclick="analyze()" id="analyze-btn" class="action-btn">
+                    <span class="btn-text">Analyze Style</span>
+                    <div class="spinner" id="analyzer-spinner"></div>
+                </button>
+                <div id="result" class="result-box hidden"></div>
+            </section>
+
+            <!-- Content Generator Section -->
+            <section id="generator" class="tab-panel">
+                <h2>AI Content Generator</h2>
+                <p class="panel-desc">Enter a topic, and StackSlate AI will instantly generate premium copy for you.</p>
+                <div class="input-group">
+                    <input type="text" id="topic" placeholder="e.g., The Future of Machine Learning in Finance">
+                </div>
+                <div class="input-row">
+                    <label for="gen-length">Length</label>
+                    <select id="gen-length">
+                        <option value="short">Short</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="long">Long</option>
+                    </select>
+
+                    <label for="gen-style">Style</label>
+                    <select id="gen-style">
+                        <option value="professional" selected>Professional</option>
+                        <option value="conversational">Conversational</option>
+                    </select>
+                </div>
+                <!-- OpenAI control removed -->
+                <button onclick="generate()" id="generate-btn" class="action-btn">
+                    <span class="btn-text">Generate Content</span>
+                    <div class="spinner" id="generator-spinner"></div>
+                </button>
+                <div id="generated" class="result-box hidden"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

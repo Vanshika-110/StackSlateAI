@@ -1,0 +1,5 @@
+
+> stackslate_ai@1.0.0 start
+> node server.js
+
+Server Running on http://localhost:5001
