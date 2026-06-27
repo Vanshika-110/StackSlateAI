@@ -142,7 +142,7 @@ Powered by Large Language Models (LLMs) combined with advanced prompt engineerin
 |---------|------------|
 | UI/UX Design | Figma |
 | Frontend | HTML, CSS, JavaScript |
-| Backend | Python |
+| Backend | Node.JS | Javascript |
 | AI/LLM | Large Language Models + Prompt Engineering |
 | Text Processing | NLP-based Content Analysis |
 | File Support | TXT, PDF, DOCX |
